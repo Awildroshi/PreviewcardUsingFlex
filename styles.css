@@ -1,0 +1,113 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+        
+        
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    min-width: 200px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+picture img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.main-container{
+    padding: 20px;
+}
+.object{
+    color:  hsl(228, 12%, 48%);
+    font-family: Montserrat;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+.header{
+    font-family: Fraunces;
+    color: black;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.content{
+    color:  hsl(228, 12%, 48%);
+    font-family: Montserrat;
+    font-size:16px;
+    line-height: 1.5;
+}   
+a{
+    border:10px;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border-radius:5px;
+    font-family: Montserrat;
+    width: 150px;
+    height:20px;
+    padding: 10px 90px;
+    font-weight: bold;   
+    
+}
+a:hover{
+    border:0px;
+    background-color: hsl(159, 83%, 14%);
+}
+.price{
+    color:hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: 1.6em;
+    font-weight:700;
+}
+span{
+    padding:20px;
+    font-size:13px;
+    text-decoration: line-through;
+    padding-top: 20px;
+    color: hsl(228, 12%, 48%);
+}
+a img{
+    padding-top: 5px;
+    margin-top:3px;  
+    margin-right: 3px; 
+}
+@media screen and (min-width:630px){
+    .flex-container{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        max-width: 650px;
+        max-height: 400px;
+        
+    }
+    picture {
+        width: 20%;    
+                       
+    }
+    
+    picture img {
+        width: 100%;                    
+        height: auto;                   
+        object-fit: cover; 
+        border-top-right-radius: 0px;             
+    }
+    .main-container{
+        width:80%;
+        padding: 10px;
+        overflow: hidden;
+    }
+    a{
+        padding: 10px 70px;
+    }
+}
+
